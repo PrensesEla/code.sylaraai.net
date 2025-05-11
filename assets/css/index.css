@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Ellie-Avalon';
+    src: url('../Fonts/AvalonMedium.ttf') format('truetype');
+}@font-face {
+    font-family: 'Ellie-Bickham-two';
+    src: url('../Fonts/Bickham Script Two.ttf') format('truetype');
+}@font-face {
+    font-family: 'Ellie-Resptive';
+    src: url('../Fonts/Respective.ttf') format('truetype');
+}
+
+:root,
+[data-bs-theme=ellie-default-private] {
+	--index-text-color: white;
+	--index-background-color: transparent;
+	--player-info-div-background-color: #ffc8f8;
+	--player-info-div-background-color2: white;
+	--player-seek-slider-color:	#ff00d5;
+	--player-seek-slider-color-thumb: #F999D9;
+	--player-seek-slider-color1: #ffffff00;
+	--player-seek-slider-color2: #ffffff00;
+
+}
+
+:root,
+[data-bs-theme=theme-black] {
+	--index-text-color: white;
+	--index-background-color: rgb(0 0 0 / 85%);
+	--player-info-div-background-color: black;
+	--player-info-div-background-color2: rgb(255 255 255 / 48%);	
+	--player-seek-slider-color:	#000000;
+	--player-seek-slider-color-thumb: #F999D9;
+	--player-seek-slider-color1: #ffffff00;
+	--player-seek-slider-color2: #ffffff00;
+}
+
+:root,
+[data-bs-theme=theme-ellie-music1] {
+	--index-text-color: white;
+	--index-background-color: transparent;
+	--player-info-div-background-color: black;
+	--player-info-div-background-color2: rgb(255 255 255 / 48%);	
+	--player-seek-slider-color:	#ff00d5;
+	--player-seek-slider-color-thumb: #F999D9;
+	--player-seek-slider-color1: #ffffff00;
+	--player-seek-slider-color2: #ffffff00;
+}
+
+.vdisplay{
+    display: none;
+}
+
+.div-index1 p{ color: var(--index-text-color); }
+
+/*********** Sayfa Özellikleri ***********/
+
+body{
+	min-height: 100vh;
+	max-width: 3840vw;
+	width: 100vw;
+	background-color: var(--index-background-color);
+	background-repeat: no-repeat;
+	repeat: no-repeat;
+	background-size: cover;
+	attachment: fixed;
+	perspective:1000px;
+	overflow: hidden;
+	position: absolute;
+}
+.desktop{
+	height: 100%;
+	min-height: 100vh;
+	max-width: 3840vw;
+	width: 100vw;
+    display:flex;
+	background-color: transparent;
+	background-repeat: no-repeat;
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+    perspective:1000px;
+	overflow: hidden;
+}
+
+.center{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********** END Sayfa Özellikleri ***********/
+
+/*********** Arka Plan Resmi Ayarları ***********/
+
+@media screen and (min-width: 3800px){
+
+}@media screen and (min-width: 1922px){
+	.index-page{
+		background-size: calc(100%) calc(100%);
+	}
+}@media screen and (min-width: 1900px){
+
+}@media screen and (max-width: 1920px){
+	.index-page{
+		background-size: 1923px 1083px;
+	}
+	@media screen and (min-width: 1000px){
+		.index-page{
+			background-size: 1923px 1083px;
+		}
+	}
+}
+/*********** END Arka Plan Resmi Ayarları ***********/

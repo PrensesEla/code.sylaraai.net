@@ -1,0 +1,202 @@
+  /* Neon Pembe Panel Stilleri */
+  .draggable-panel {
+    position: absolute;
+    background-color: rgba(255, 245, 252, 0.95); /* Neredeyse beyaz, pembe tonlu, şeffaf */
+    border: 1px solid rgba(255, 180, 240, 0.6);
+    box-shadow: 0 2px 15px rgba(255, 54, 201, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    font-family: 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+}
+
+.draggable-panel.floating {
+    width: 200px; /* Daha da küçük panel */
+    height: 300px;
+    top: 50px;
+    left: 50px;
+}
+
+.draggable-panel.docked-left {
+    top: 0 !important;
+    left: 0 !important;
+    width: 200px !important;
+    height: 100% !important;
+    border-radius: 0;
+    border-right: 1px solid #ffcbf3;
+    box-shadow: 2px 0 8px rgba(255, 54, 201, 0.15);
+}
+
+.draggable-panel.docked-right {
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 200px !important;
+    height: 100% !important;
+    border-radius: 0;
+    border-left: 1px solid #ffcbf3;
+    box-shadow: -2px 0 8px rgba(255, 54, 201, 0.15);
+}
+
+.draggable-panel.docked-top {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 160px !important; /* Daha da küçük */
+    border-radius: 0;
+    border-bottom: 1px solid #ffcbf3;
+    box-shadow: 0 2px 8px rgba(255, 54, 201, 0.15);
+}
+
+.draggable-panel.docked-bottom {
+    bottom: 0 !important;
+    top: auto !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 160px !important; /* Daha da küçük */
+    border-radius: 0;
+    border-top: 1px solid #ffcbf3;
+    box-shadow: 0 -2px 8px rgba(255, 54, 201, 0.15);
+}
+
+.draggable-panel.docked-center {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0;
+    border: 1px solid rgba(255, 54, 201, 0.5);
+    box-shadow: 0 0 15px rgba(255, 54, 201, 0.3);
+}
+
+/* Neon Pembe Başlık */
+.panel-header {
+    padding: 4px 8px;
+    background: linear-gradient(to right, #ff36c9, #ff5ed9); /* Neon pembe gradyan */
+    color: white;
+    font-weight: 400;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    font-size: 9px;
+    border-bottom: 1px solid #ffcbf3;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 10px rgba(255, 54, 201, 0.4);
+    backdrop-filter: blur(1px);
+}
+
+.panel-header .title-text {
+    margin-left: 2px;
+    letter-spacing: 0.5px;
+    font-size: 9px;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Neon Pembe İçerik Alanı */
+.panel-content {
+    padding: 2px 0;
+    height: calc(100% - 30px); /* Header yüksekliği düşülür */
+    overflow-y: auto;
+    background-color: rgba(255, 245, 252, 0.9);
+    color: #222222;
+}
+
+/* İnce scrollbar */
+.panel-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.panel-content::-webkit-scrollbar-track {
+    background: rgba(255, 240, 250, 0.8);
+}
+
+
+/* Şık Kapatma Düğmesi */
+.close-btn {
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    padding: 0 3px;
+    margin-left: 3px;
+    font-weight: 300;
+}
+.close-btn:hover {
+    opacity: 1;
+}
+
+/* Modern-Nostaljik Dosya Ağacı Stilleri (Açık Tema) */
+.windows-file-explorer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.file-tree {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree-item {
+    padding: 2px 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: background-color 0.15s ease;
+    margin-bottom: 1px;
+    font-size: 9px;
+}
+
+.tree-item.folder {
+    font-weight: 500;
+    color: rgba(40, 40, 40, 0.9);
+}
+
+.tree-item.file {
+    color: rgba(50, 50, 50, 0.9);
+}
+
+.tree-item span {
+    vertical-align: middle;
+}
+
+.folder-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmMzZjOSIgZD0iTTEwLDRINGMtMS4xMSwwLTIsMC44OS0yLDJ2MTJjMCwxLjEsMC44OSwyLDIsMmgxNmMxLjEsMCwyLTAuOSwyLTJWOGMwLTEuMTEtMC45LTItMi0yaC04TDEwLDR6Ii8+PC9zdmc+');
+    margin-right: 3px;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 2px rgba(255, 54, 201, 0.3));
+}
+
+.file-icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmNTRjMCIgZD0iTTEzLDlWMy41TDE4LjUsOUgxM00xNCwxN1YxNUgyQzIsMTYuMDgsMi44NCwxNyw0LDE3SDE0TTE2LDdoLTFsMCwwVjhIMUMwLjQ1LDgsMCw4LjQ1LDAsOVYxMUMwLDExLjU1LDAuNDUsMTIsMSwxMkgxNlYxMC41TDE2LjgzLDEwLjE0QzE2LjQxLDkuNTQsMTYuMDcsOC43OSwxNiw4VjdaTTE0LDRsMCwwIDQsNEwyMiw0VjE5QTMsMywwLDAsMSwxOSwyMkg0QTMsMywwLDAsMSwxLDE5SDE0VjRaIiAvPjwvc3ZnPg==');
+    margin-right: 3px;
+    opacity: 0.75;
+    filter: drop-shadow(0 0 1px rgba(255, 54, 201, 0.2));
+}
+
+.tree-item.folder ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.tree-item.folder:not(.expanded) > ul {
+    display: none;
+}
