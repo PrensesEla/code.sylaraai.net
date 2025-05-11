@@ -1,6 +1,6 @@
+<link rel="stylesheet" href="assets/css/code-editor.css">
 <style>
-
-    </style>
+</style>
 <nav class="vscode-menu-bar">
     <ul>
         <!-- File Menu -->
@@ -57,7 +57,7 @@
                 <li><a>Uzaklaştır <span class="shortcut">Ctrl+-</span></a></li>
                 <li><a>Yakınlaştırmayı Sıfırla <span class="shortcut">Ctrl+NumPad0</span></a></li>
                 <li><hr></li>
-                <li><a onclick="openMenuPanels(document.getElementById('fileExplorerPanel'))">Dosya Gezgin <span class="shortcut">Ctrl+Shift+E</span></a></li>
+                <li><a onclick="openMenuPanels(document.getElementById('fileExplorerPanel'))">Dosya Gezgini <span class="shortcut">Ctrl+Shift+E</span></a></li>
                 <li><a>Hatalar <span class="shortcut">Ctrl+M</span></a></li>
                 <li><a>Çıktı <span class="shortcut">Ctrl+Ç</span></a></li>
                 <li><hr></li>
